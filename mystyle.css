@@ -1,0 +1,35 @@
+*{
+    margin: ;
+}
+body{
+    font-family: arial;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+
+/*headers*/
+header{
+    display: flex;
+    height: 100px;
+    background color: green;
+    justify-content: space-around;
+    align-items: center;
+}
+header a{
+    margin-right: 30px;
+}
+
+/*main*/
+main{
+
+}
+main h2{
+    font-size: 45px;
+    width: 300px;
+    text-align: center;
+}
