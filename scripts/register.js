@@ -1,11 +1,14 @@
 console.log("register");
 //create an array
-let pets=["hershey","shadow","nirvana sue"];
-
+// let pets=["hershey","shadow","nirvana sue"];
+let pets = [];
 
 //display name function //loops
 function displayNames(){
-    for(let i=0,i<pets.length;i++){
+    
+    for(let i=0;i<pets.length;i++){
+        console.log(`pet in Pos. ${i} = ${pets[i].name}`);
+
         document.getElementById("results").innerHTML+=`<li>${pets[i].name}</li>`;//arrayName
     }
 }
@@ -32,8 +35,13 @@ function init(){
 }
     //push the pets in the array
     pets.push(pet1,pet2,pet3);
-    //display names
     displayNames();
+    //display names
+   // displayNames("hershey","shadow", "Nirvana Sue");
+
+
 }
 
 window.onload=init; // wait to render the HTML
+
+//Extra challenge: Create a function to calculate the average of the pet's ages.

@@ -1,18 +1,18 @@
 *{
-    margin: ;
+    margin: 0px;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
     display: block;
     height: 30%;
     font-display: center;
-    background-color: salmon;
+    background-color: rgb(243, 153, 143);
 }
-a{
+.a{
     color: black;
-    text-decoration: mintcream;
-    background-color: teal;
-    padding: 25px; 
+    text-decoration: rgb(133, 201, 167);
+    background-color: rgb(24, 224, 224);
+    justify-content: space-around;
 }
 img{
     max-width: 100%;
@@ -22,7 +22,7 @@ img{
 header{
     display: flex;
     height: 100px; 
-    background color: blue;
+    background-color: rgb(134, 218, 176);
     justify-content: space-around;
     align-items: center;
     padding: 15px; 
@@ -44,6 +44,6 @@ main h2{
     text-align: center;
     padding: 5px;
     justify-content: space-around;
-    background-color: navy;
+    background-color: rgba(44, 8, 224, 0.808);
     -webkit-text-fill-color: white;
 }
