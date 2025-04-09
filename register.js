@@ -6,7 +6,7 @@ let pets=["hershey","shadow","nirvana sue"];
 //display name function //loops
 function displayNames(){
     for(let i=0,i<pets.length;i++){
-        document.getElementById("results").innerHTML+=`<li>${pets[i].names}</li>`;//arrayName
+        document.getElementById("results").innerHTML+=`<li>${pets[i].name}</li>`;//arrayName
     }
 }
 
@@ -32,9 +32,7 @@ function init(){
 }
     //push the pets in the array
     pets.push(pet1,pet2,pet3);
-
     //display names
-
     displayNames();
 }
 
