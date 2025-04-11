@@ -39,11 +39,36 @@ main{
 }
 main h2{
     font-size: 45px;
-    display: flexbox;
-    width: 300px;
+    display: flex;
     text-align: center;
     padding: 5px;
     justify-content: space-around;
     background-color: rgba(44, 8, 224, 0.808);
     -webkit-text-fill-color: white;
+}
+
+main img{
+    display:block; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+}
+
+.myform{
+    background-color: lightgray;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px;
+    margin: 10px;
+    border: 2px; solid; black;
+    border-radius: 20px;
+}
+
+.input-container{
+    margin: 20px;
+}
+.input-container input{
+    width: 70%;
+    border: none;
+    padding: 3px;
 }
