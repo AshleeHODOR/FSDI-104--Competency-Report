@@ -30,7 +30,7 @@ function register(){
 function displayPets(){
     document.getElementById("results").innerHTML=""; 
     for(let i=0;i<pets.length;i++){
-        document.getElementById("results").innerHTML+=`<li>${pets[i].name} - ${pets[i].age}</li>`; 
+        document.getElementById("results").innerHTML+=`<li>${pets[i].name} - ${pets[i].age} - ${pets[i].age}</li>`; 
     }
 }
 
