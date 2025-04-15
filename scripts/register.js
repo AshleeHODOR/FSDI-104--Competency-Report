@@ -27,23 +27,40 @@ function register(){
 }
 
 //display name function //loop;
-function displayPets(){
+function displayRow(){    
+    let result = "";
     document.getElementById("results").innerHTML=""; 
+
     for(let i=0;i<pets.length;i++){
-        document.getElementById("results").innerHTML+=`<li>${pets[i].name} - ${pets[i].age} - ${pets[i].age}</li>`; 
+        console.log("pet,", pets[i]);
+        
+        //document.getElementById("results").innerHTML+=`<li>${pets[i].name} - ${pets[i].age}</li>`; 
+        result += `
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">${pets[i].name} - <span class="text-secondary">${pets[i].service}</span></h5>
+                <h6>${pets[i].breed}</h6>
+                <p class="card-text">${pets[i].gender},${pets[i].age}</p>
+                <a href="#" class="btn btn-danger btn-sm">Delete</a>
+            </div>
+        </div>
+    `
     }
+    
+    document.getElementById("results").innerHTML+=result;
 }
 
 function init(){
     //create pet objects
-    let pet1 = new Pet("Scooby",80,"Male","dane","no service");
-    let pet2 = new Pet("Scrappy",5,"Male","husky","service dog");
-    let pet3 = new Pet("Hershey",19,"Female","husky","no service");
+    let pet1 = new Pet("Scooby",80,"Male","Dane","no service");
+    let pet2 = new Pet("Scrappy",5,"Male","Beagle","service dog");
+    let pet3 = new Pet("Hershey",19,"Female","Husky","no service");
 
     //array
     pets.push(pet1,pet2,pet3);
+    displayPets();
     //display names
-    displayNames("Scooby","Scrappy","Hershey");
+    //displayNames("Scooby","Scrappy","Hershey");
 }
 
 window.onload=init; // wait to render the HTML
