@@ -1,4 +1,4 @@
-console.log("register");
+//console.log("register");
 //create an array
 let pets = []; //the empty array 
 
@@ -27,38 +27,43 @@ function register(){
 }
 
 //display name function //loop;
-function displayRow(){    
+function displayDoggies(){    
     let result = "";
     document.getElementById("results").innerHTML=""; 
 
     for(let i=0;i<pets.length;i++){
-        console.log("pet,", pets[i]);
-        
-        //document.getElementById("results").innerHTML+=`<li>${pets[i].name} - ${pets[i].age}</li>`; 
-        result += `
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">${pets[i].name} - <span class="text-secondary">${pets[i].service}</span></h5>
-                <h6>${pets[i].breed}</h6>
-                <p class="card-text">${pets[i].gender},${pets[i].age}</p>
-                <a href="#" class="btn btn-danger btn-sm">Delete</a>
-            </div>
-        </div>
-    `
+        result +=`
+        <tr id="${i}">
+            <td> ${pets[i].name} </td>
+            <td> ${pets[i].age} </td>
+            <td> ${pets[i].gender} </td>
+            <td> ${pets[i].breed} </td>
+            <td> ${pets[i].service} </td>
+            <td> <button class="btn btn-danger btn-sm" onclick="deletePet(${i})" > Delete </button> </td>
+        </tr> `
     }
     
     document.getElementById("results").innerHTML+=result;
 }
+
+function deletePet(petID){
+    console.log("delete a pet ..." + petID); 
+    // delete from HTML
+    document.getElementById(petID).remove();
+    //delete from the array
+    pets.splice(petID,1);
+    displayDoggies();
+}
+
 
 function init(){
     //create pet objects
     let pet1 = new Pet("Scooby",80,"Male","Dane","no service");
     let pet2 = new Pet("Scrappy",5,"Male","Beagle","service dog");
     let pet3 = new Pet("Hershey",19,"Female","Husky","no service");
-
-    //array
+    //push pets in the array
     pets.push(pet1,pet2,pet3);
-    displayPets();
+    displayDoggies();
     //display names
     //displayNames("Scooby","Scrappy","Hershey");
 }

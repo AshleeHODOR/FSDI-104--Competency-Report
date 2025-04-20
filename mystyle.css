@@ -35,8 +35,9 @@ header a{
 
 /*main*/
 main{
-
+    margin: 0%; 
 }
+
 main h2{
     font-size: 45px;
     display: flex;
@@ -60,7 +61,7 @@ main img{
     margin-right: 10%;
     padding: 20px;
     margin: 10px;
-    border: 2px; solid; black;
+    border: 2px;
     border-radius: 20px;
 }
 
@@ -73,3 +74,11 @@ main img{
     padding: 3px;
 }
 
+.register-button{
+    padding: 25px; 
+}
+
+table{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 10px solid navy;
+}
