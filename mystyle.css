@@ -3,6 +3,7 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     display: block;
     height: 30%;
     font-display: center;
@@ -21,11 +22,12 @@ img{
 /*headers*/
 header{
     display: flex;
-    height: 100px; 
+    height: 110px; 
     background-color: rgb(134, 218, 176);
     justify-content: space-around;
     align-items: center;
     padding: 15px; 
+    font-weight: bold;
 }
 
 header a{
@@ -81,4 +83,18 @@ main img{
 table{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 10px solid navy;
+    padding: 10px;
+}
+
+.myform{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    border: 5px solid navy;
+    padding: 10px;
+}
+
+.register-container{
+    margin: 10px;
+}
+.pets-container{
+    border: 7px solid;
 }
