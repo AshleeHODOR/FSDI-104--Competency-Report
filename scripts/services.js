@@ -4,8 +4,8 @@ function register(){
     console.log("register"); 
 }
 
-$("#purple").css("color","purple").css("color","white"); 
+$("#purple").css("color","purple"); 
 $("#orange").css("background-color","orange").css("color","white");
 
 let paragraphWithBorder = $(".with-border");
-paragraphWithBorder.css("border","1px dotted blue").css("background-color","white").css; 
+paragraphWithBorder.css("border","1px dotted blue"); 

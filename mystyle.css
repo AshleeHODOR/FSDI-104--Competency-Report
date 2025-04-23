@@ -117,3 +117,21 @@ register-me-button{
     width: 900px;
     padding: 100px;
 }
+
+/* Services */
+.service-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+}
+
+
+#btnRegister {
+    background: purple;
+    color: white;
+    padding: 6px;
+    border-radius: 8px;
+}
