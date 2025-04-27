@@ -19,10 +19,13 @@ function Pet(name, age, gender, breed, service){
 
 function register(){
     //create a new pet
-    let newPet = new Pet();
+    let newPet = new Pet(inputName.value,inputAge.value,inputGender.value,inputBreed.value,inputService.value);
+    console.log("new pet: ", newPet);
+    
     console.log(inputName.value,inputAge.value,inputGender.value,inputBreed.value,inputService.value);
     //push the new pet
     pets.push(newPet); 
+    displayDoggies()
     //display the name function
 }
 
